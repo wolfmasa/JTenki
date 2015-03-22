@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDB6B1B61ABE5884004C2D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6B1B51ABE5884004C2D71 /* AppDelegate.swift */; };
+		DDB6B1B81ABE5884004C2D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6B1B71ABE5884004C2D71 /* ViewController.swift */; };
+		DDB6B1BB1ABE5884004C2D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB6B1B91ABE5884004C2D71 /* Main.storyboard */; };
+		DDB6B1BD1ABE5885004C2D71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB6B1BC1ABE5885004C2D71 /* Images.xcassets */; };
+		DDB6B1C01ABE5885004C2D71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB6B1BE1ABE5885004C2D71 /* LaunchScreen.xib */; };
+		DDB6B1CC1ABE5885004C2D71 /* JTenkiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6B1CB1ABE5885004C2D71 /* JTenkiTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDB6B1C61ABE5885004C2D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDB6B1A81ABE5884004C2D71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDB6B1AF1ABE5884004C2D71;
+			remoteInfo = JTenki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDB6B1B01ABE5884004C2D71 /* JTenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB6B1B41ABE5884004C2D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB6B1B51ABE5884004C2D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDB6B1B71ABE5884004C2D71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDB6B1BA1ABE5884004C2D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDB6B1BC1ABE5885004C2D71 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDB6B1BF1ABE5885004C2D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DDB6B1C51ABE5885004C2D71 /* JTenkiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTenkiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB6B1CA1ABE5885004C2D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB6B1CB1ABE5885004C2D71 /* JTenkiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTenkiTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDB6B1AD1ABE5884004C2D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB6B1C21ABE5885004C2D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDB6B1A71ABE5884004C2D71 = {
+			isa = PBXGroup;
+			children = (
+				DDB6B1B21ABE5884004C2D71 /* JTenki */,
+				DDB6B1C81ABE5885004C2D71 /* JTenkiTests */,
+				DDB6B1B11ABE5884004C2D71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDB6B1B11ABE5884004C2D71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6B1B01ABE5884004C2D71 /* JTenki.app */,
+				DDB6B1C51ABE5885004C2D71 /* JTenkiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDB6B1B21ABE5884004C2D71 /* JTenki */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6B1B51ABE5884004C2D71 /* AppDelegate.swift */,
+				DDB6B1B71ABE5884004C2D71 /* ViewController.swift */,
+				DDB6B1B91ABE5884004C2D71 /* Main.storyboard */,
+				DDB6B1BC1ABE5885004C2D71 /* Images.xcassets */,
+				DDB6B1BE1ABE5885004C2D71 /* LaunchScreen.xib */,
+				DDB6B1B31ABE5884004C2D71 /* Supporting Files */,
+			);
+			path = JTenki;
+			sourceTree = "<group>";
+		};
+		DDB6B1B31ABE5884004C2D71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6B1B41ABE5884004C2D71 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDB6B1C81ABE5885004C2D71 /* JTenkiTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6B1CB1ABE5885004C2D71 /* JTenkiTests.swift */,
+				DDB6B1C91ABE5885004C2D71 /* Supporting Files */,
+			);
+			path = JTenkiTests;
+			sourceTree = "<group>";
+		};
+		DDB6B1C91ABE5885004C2D71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6B1CA1ABE5885004C2D71 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDB6B1AF1ABE5884004C2D71 /* JTenki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDB6B1CF1ABE5885004C2D71 /* Build configuration list for PBXNativeTarget "JTenki" */;
+			buildPhases = (
+				DDB6B1AC1ABE5884004C2D71 /* Sources */,
+				DDB6B1AD1ABE5884004C2D71 /* Frameworks */,
+				DDB6B1AE1ABE5884004C2D71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTenki;
+			productName = JTenki;
+			productReference = DDB6B1B01ABE5884004C2D71 /* JTenki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDB6B1C41ABE5885004C2D71 /* JTenkiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDB6B1D21ABE5885004C2D71 /* Build configuration list for PBXNativeTarget "JTenkiTests" */;
+			buildPhases = (
+				DDB6B1C11ABE5885004C2D71 /* Sources */,
+				DDB6B1C21ABE5885004C2D71 /* Frameworks */,
+				DDB6B1C31ABE5885004C2D71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDB6B1C71ABE5885004C2D71 /* PBXTargetDependency */,
+			);
+			name = JTenkiTests;
+			productName = JTenkiTests;
+			productReference = DDB6B1C51ABE5885004C2D71 /* JTenkiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDB6B1A81ABE5884004C2D71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = ProjectJ;
+				TargetAttributes = {
+					DDB6B1AF1ABE5884004C2D71 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					DDB6B1C41ABE5885004C2D71 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = DDB6B1AF1ABE5884004C2D71;
+					};
+				};
+			};
+			buildConfigurationList = DDB6B1AB1ABE5884004C2D71 /* Build configuration list for PBXProject "JTenki" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDB6B1A71ABE5884004C2D71;
+			productRefGroup = DDB6B1B11ABE5884004C2D71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDB6B1AF1ABE5884004C2D71 /* JTenki */,
+				DDB6B1C41ABE5885004C2D71 /* JTenkiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDB6B1AE1ABE5884004C2D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB6B1BB1ABE5884004C2D71 /* Main.storyboard in Resources */,
+				DDB6B1C01ABE5885004C2D71 /* LaunchScreen.xib in Resources */,
+				DDB6B1BD1ABE5885004C2D71 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB6B1C31ABE5885004C2D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDB6B1AC1ABE5884004C2D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB6B1B81ABE5884004C2D71 /* ViewController.swift in Sources */,
+				DDB6B1B61ABE5884004C2D71 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB6B1C11ABE5885004C2D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB6B1CC1ABE5885004C2D71 /* JTenkiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDB6B1C71ABE5885004C2D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDB6B1AF1ABE5884004C2D71 /* JTenki */;
+			targetProxy = DDB6B1C61ABE5885004C2D71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDB6B1B91ABE5884004C2D71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDB6B1BA1ABE5884004C2D71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDB6B1BE1ABE5885004C2D71 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDB6B1BF1ABE5885004C2D71 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDB6B1CD1ABE5885004C2D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDB6B1CE1ABE5885004C2D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDB6B1D01ABE5885004C2D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JTenki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDB6B1D11ABE5885004C2D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JTenki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DDB6B1D31ABE5885004C2D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JTenkiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTenki.app/JTenki";
+			};
+			name = Debug;
+		};
+		DDB6B1D41ABE5885004C2D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JTenkiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTenki.app/JTenki";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDB6B1AB1ABE5884004C2D71 /* Build configuration list for PBXProject "JTenki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB6B1CD1ABE5885004C2D71 /* Debug */,
+				DDB6B1CE1ABE5885004C2D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDB6B1CF1ABE5885004C2D71 /* Build configuration list for PBXNativeTarget "JTenki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB6B1D01ABE5885004C2D71 /* Debug */,
+				DDB6B1D11ABE5885004C2D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDB6B1D21ABE5885004C2D71 /* Build configuration list for PBXNativeTarget "JTenkiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB6B1D31ABE5885004C2D71 /* Debug */,
+				DDB6B1D41ABE5885004C2D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDB6B1A81ABE5884004C2D71 /* Project object */;
+}
