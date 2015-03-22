@@ -161,6 +161,7 @@
 				TargetAttributes = {
 					DDB6B1AF1ABE5884004C2D71 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = HUA9832AFD;
 					};
 					DDB6B1C41ABE5885004C2D71 = {
 						CreatedOnToolsVersion = 6.2;
