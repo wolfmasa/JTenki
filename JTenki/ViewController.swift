@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var textArea: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,26 +28,31 @@ class ViewController: UIViewController {
     
     func requestToUrl(url :String){
         
-        let queue: NSOperationQueue = NSOperationQueue()
-        queue.addOperationWithBlock({() in
-            
-            let targetUrl = NSURL(fileURLWithPath: url)
-            var request: NSMutableURLRequest = NSMutableURLRequest(URL: targetUrl!)
-            request.HTTPMethod = "GET"
-            
-            var response: NSURLResponse?
+        // 通信先のURLを生成.
+        var myUrl:NSURL = NSURL(string:url)!
+        // リクエストを生成.
+        var myRequest:NSURLRequest  = NSURLRequest(URL: myUrl)
+        // 送信処理を始める.
+        NSURLConnection.sendAsynchronousRequest(myRequest, queue: NSOperationQueue.mainQueue(), completionHandler: self.getHttp)
 
-            var data = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: nil)
-            println(data)
-            
-            if let httpResponse = response as? NSHTTPURLResponse {
-                println("error \(httpResponse.statusCode)")
-            }
-            println(response)
-        
-        })
     }
-    
+
+    func getHttp(res:NSURLResponse?,data:NSData?,error:NSError?){
+
+        // 帰ってきたデータを文字列に変換.
+        var myData:NSString = NSString(data: data!, encoding: NSUTF8StringEncoding)!
+        // TextViewにセット.
+        textArea.text = myData
+        //println(myData)
+
+        var json:NSDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSDictionary
+
+        let array = json["weather"]! as NSArray
+        let weather = (array[0] as NSDictionary)["main"] as NSString
+        textLabel.text = weather
+        println(weather)
+    }
+
 /**
         //NSOperationQueueを使ってマルチスレッドでリクエスト
         NSOperationQueue *queue = [[NSOperationQueue alloc] init];
