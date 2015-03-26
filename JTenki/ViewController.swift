@@ -39,6 +39,10 @@ class ViewController: UIViewController {
 
     func getHttp(res:NSURLResponse?,data:NSData?,error:NSError?){
 
+        if res == nil {
+            return
+        }
+
         // 帰ってきたデータを文字列に変換.
         var myData:NSString = NSString(data: data!, encoding: NSUTF8StringEncoding)!
         // TextViewにセット.

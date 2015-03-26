@@ -34,13 +34,13 @@ class JTableView: UITableViewController {
         teamArray.append(Teams(label: "湘南ベルマーレ", imageName: nil, location: "Hiratsuka"))
         teamArray.append(Teams(label: "モンテディオ山形", imageName: nil, location: "Yamagata"))
         teamArray.append(Teams(label: "ヴィッセル神戸", imageName: nil, location: "Kobe"))
-        teamArray.append(Teams(label: "アルビレックス新潟", imageName: nil, location: "Nigata"))
+        teamArray.append(Teams(label: "アルビレックス新潟", imageName: nil, location: "Niigata-shi"))
 
     }
 
     func requestToUrl(location :String){
 
-        let url = "http://api.openweathermap.org/data/2.5/weather?q=\(location)"
+        let url = "http://api.openweathermap.org/data/2.5/weather?q=\(location),jp"
 
         // 通信先のURLを生成.
         var myUrl:NSURL = NSURL(string:url)!
@@ -52,6 +52,11 @@ class JTableView: UITableViewController {
     }
 
     func getHttp(res:NSURLResponse?,data:NSData?,error:NSError?){
+
+
+        if (res as NSHTTPURLResponse).statusCode != 200 {
+            return ;
+        }
 
         // 帰ってきたデータを文字列に変換.
         var myData:NSString = NSString(data: data!, encoding: NSUTF8StringEncoding)!
@@ -66,7 +71,7 @@ class JTableView: UITableViewController {
 
         for( var i=0; i<teamArray.count; i++ ) {
             var t = teamArray[i]
-            let url = "http://api.openweathermap.org/data/2.5/weather?q=\(t.location)"
+            let url = "http://api.openweathermap.org/data/2.5/weather?q=\(t.location),jp"
             if url == res?.URL?.absoluteString && teamArray[i].imageName == nil{
                 teamArray[i].imageName = "\(weatherIcon).png"
                 self.tableView.reloadData()
@@ -101,6 +106,10 @@ class JTableView: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return teamArray.count
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        println("segueeee")
     }
 
 }
