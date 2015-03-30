@@ -10,11 +10,17 @@ import UIKit
 
 class WeatherDetail : UIViewController {
     var label: String = ""
+    var image: UIImage? = nil
 
 
     @IBOutlet weak var myLabel: UILabel!
 
+    @IBOutlet weak var weatherImage: UIImageView!
     override func viewDidLoad() {
         myLabel.text = label
+
+        if let img = image {
+            weatherImage.image = img
+        }
     }
 }

@@ -119,7 +119,35 @@ class JTableView: UITableViewController {
         if segue.identifier == "toDetailView" {
             var dstView: WeatherDetail = segue.destinationViewController as WeatherDetail
             dstView.label = selectedTeam.label
-            println("segueeee")
+
+            if selectedTeam.imageName == "01d.png" || selectedTeam.imageName == "01n.png" {
+                dstView.image = UIImage(named: "clearsky.jpg")
+            }
+            else if selectedTeam.imageName == "02d.png" || selectedTeam.imageName == "02n.png" {
+                dstView.image = UIImage(named: "fewcloud.jpg")
+            }
+            else if selectedTeam.imageName == "03d.png" || selectedTeam.imageName == "03n.png" {
+                dstView.image = UIImage(named: "cloud.jpg")
+            }
+            else if selectedTeam.imageName == "04d.png" || selectedTeam.imageName == "04n.png" {
+                dstView.image = UIImage(named: "brokencloud.jpg")
+            }
+            else if selectedTeam.imageName == "09d.png" || selectedTeam.imageName == "09n.png" {
+                dstView.image = UIImage(named: "showerrain.jpg")
+            }
+            else if selectedTeam.imageName == "10d.png" || selectedTeam.imageName == "10n.png" {
+                dstView.image = UIImage(named: "rain.jpg")
+            }
+            else if selectedTeam.imageName == "11d.png" || selectedTeam.imageName == "11n.png" {
+                dstView.image = UIImage(named: "thunderstorm.jpg")
+            }
+            else if selectedTeam.imageName == "13d.png" || selectedTeam.imageName == "13n.png" {
+                dstView.image = UIImage(named: "snow.jpg")
+            }
+            else if selectedTeam.imageName == "50d.png" || selectedTeam.imageName == "50n.png" {
+                dstView.image = UIImage(named: "mist.jpg")
+            }
+
         }
 
     }
