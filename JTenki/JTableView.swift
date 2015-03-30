@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Teams {
+struct Team {
     var label: String
     var imageName: String?
     var location: String
@@ -17,24 +17,26 @@ struct Teams {
 
 class JTableView: UITableViewController {
 
-    var teamArray: Array<Teams> = []
+    var teamArray: Array<Team> = []
+    var selectedTeam: Team = Team(label: "", imageName: "", location: "")
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        teamArray.append(Teams(label: "鹿島アントラーズ", imageName: nil, location: "Kashima"))
-        teamArray.append(Teams(label: "ガンバ大阪", imageName: nil, location: "Osaka"))
-        teamArray.append(Teams(label: "横浜・F・マリノス", imageName: nil, location: "Yokohama"))
-        teamArray.append(Teams(label: "サンフレッチェ広島", imageName: nil, location: "Hiroshima"))
-        teamArray.append(Teams(label: "川崎フロンターレ", imageName: nil, location: "Kawasaki"))
-        teamArray.append(Teams(label: "ベガルタ仙台", imageName: nil, location: "Sendai"))
-        teamArray.append(Teams(label: "名古屋グランパス", imageName: nil, location: "Nagoya"))
-        teamArray.append(Teams(label: "FC東京", imageName: nil, location: "Tokyo"))
-        teamArray.append(Teams(label: "柏レイソル", imageName: nil, location: "Kashiwa"))
-        teamArray.append(Teams(label: "湘南ベルマーレ", imageName: nil, location: "Hiratsuka"))
-        teamArray.append(Teams(label: "モンテディオ山形", imageName: nil, location: "Yamagata"))
-        teamArray.append(Teams(label: "ヴィッセル神戸", imageName: nil, location: "Kobe"))
-        teamArray.append(Teams(label: "アルビレックス新潟", imageName: nil, location: "Niigata-shi"))
+        teamArray.append(Team(label: "鹿島アントラーズ", imageName: nil, location: "Kashima"))
+        teamArray.append(Team(label: "ガンバ大阪", imageName: nil, location: "Osaka"))
+        teamArray.append(Team(label: "横浜・F・マリノス", imageName: nil, location: "Yokohama"))
+        teamArray.append(Team(label: "サンフレッチェ広島", imageName: nil, location: "Hiroshima"))
+        teamArray.append(Team(label: "川崎フロンターレ", imageName: nil, location: "Kawasaki"))
+        teamArray.append(Team(label: "ベガルタ仙台", imageName: nil, location: "Sendai"))
+        teamArray.append(Team(label: "名古屋グランパス", imageName: nil, location: "Nagoya"))
+        teamArray.append(Team(label: "FC東京", imageName: nil, location: "Tokyo"))
+        teamArray.append(Team(label: "柏レイソル", imageName: nil, location: "Kashiwa"))
+        teamArray.append(Team(label: "湘南ベルマーレ", imageName: nil, location: "Hiratsuka"))
+        teamArray.append(Team(label: "モンテディオ山形", imageName: nil, location: "Yamagata"))
+        teamArray.append(Team(label: "ヴィッセル神戸", imageName: nil, location: "Kobe"))
+        teamArray.append(Team(label: "アルビレックス新潟", imageName: nil, location: "Niigata-shi"))
 
     }
 
@@ -108,8 +110,18 @@ class JTableView: UITableViewController {
         return teamArray.count
     }
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedTeam = teamArray[indexPath.row]
+        self.performSegueWithIdentifier("toDetailView", sender: nil)
+    }
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        println("segueeee")
+        if segue.identifier == "toDetailView" {
+            var dstView: WeatherDetail = segue.destinationViewController as WeatherDetail
+            dstView.label = selectedTeam.label
+            println("segueeee")
+        }
+
     }
 
 }

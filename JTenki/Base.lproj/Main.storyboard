@@ -73,13 +73,13 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="32E-Cg-oNf"/>
+                                <exclude reference="KFe-hg-7QI"/>
                                 <exclude reference="16a-8p-fL9"/>
                                 <exclude reference="D5f-iz-1Kg"/>
                                 <exclude reference="Z9b-Hf-QDq"/>
                                 <exclude reference="sOb-aq-yt9"/>
                                 <exclude reference="xPW-Ol-b42"/>
-                                <exclude reference="32E-Cg-oNf"/>
-                                <exclude reference="KFe-hg-7QI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -87,12 +87,12 @@
                                 <exclude reference="zEy-Gp-8D7"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="32E-Cg-oNf"/>
+                                <include reference="KFe-hg-7QI"/>
                                 <exclude reference="16a-8p-fL9"/>
                                 <exclude reference="D5f-iz-1Kg"/>
                                 <include reference="sOb-aq-yt9"/>
                                 <include reference="xPW-Ol-b42"/>
-                                <include reference="32E-Cg-oNf"/>
-                                <include reference="KFe-hg-7QI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -126,9 +126,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6JX-zx-vPa" id="jnN-21-LRC">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="xaf-Y1-5Ei" kind="show" id="Frr-hZ-u3b"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -137,24 +134,52 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="nPI-Ey-Jsq"/>
+                    <connections>
+                        <segue destination="xaf-Y1-5Ei" kind="show" identifier="toDetailView" id="WdP-u0-oIg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95l-oQ-fXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2595" y="-449.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Weather Detail-->
         <scene sceneID="fgY-1d-NgL">
             <objects>
-                <viewController id="xaf-Y1-5Ei" sceneMemberID="viewController">
+                <viewController id="xaf-Y1-5Ei" customClass="WeatherDetail" customModule="JTenki" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DAu-T1-EhR"/>
                         <viewControllerLayoutGuide type="bottom" id="nD1-Hb-9MR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xi4-B1-vr7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci6-RH-bnW">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="99" y="231" width="210" height="108"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ci6-RH-bnW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ci6-RH-bnW"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Of2-qD-GrL"/>
+                    <connections>
+                        <outlet property="myLabel" destination="ci6-RH-bnW" id="2lD-hM-PsV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5F-Ab-CbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

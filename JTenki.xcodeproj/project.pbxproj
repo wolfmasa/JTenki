@@ -27,6 +27,7 @@
 		00184A471AC00D6300613FDE /* 03d.png in Resources */ = {isa = PBXBuildFile; fileRef = 00184A351AC00D6300613FDE /* 03d.png */; };
 		00184A481AC00D6300613FDE /* 02d.png in Resources */ = {isa = PBXBuildFile; fileRef = 00184A361AC00D6300613FDE /* 02d.png */; };
 		00184A491AC00D6300613FDE /* 01d.png in Resources */ = {isa = PBXBuildFile; fileRef = 00184A371AC00D6300613FDE /* 01d.png */; };
+		009A1DC11AC8FDF300F495DC /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A1DC01AC8FDF300F495DC /* WeatherDetail.swift */; };
 		DDB6B1B61ABE5884004C2D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6B1B51ABE5884004C2D71 /* AppDelegate.swift */; };
 		DDB6B1B81ABE5884004C2D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6B1B71ABE5884004C2D71 /* ViewController.swift */; };
 		DDB6B1BB1ABE5884004C2D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB6B1B91ABE5884004C2D71 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		00184A351AC00D6300613FDE /* 03d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03d.png; sourceTree = "<group>"; };
 		00184A361AC00D6300613FDE /* 02d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02d.png; sourceTree = "<group>"; };
 		00184A371AC00D6300613FDE /* 01d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01d.png; sourceTree = "<group>"; };
+		009A1DC01AC8FDF300F495DC /* WeatherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
 		DDB6B1B01ABE5884004C2D71 /* JTenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB6B1B41ABE5884004C2D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB6B1B51ABE5884004C2D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				DDB6B1BE1ABE5885004C2D71 /* LaunchScreen.xib */,
 				DDB6B1B31ABE5884004C2D71 /* Supporting Files */,
 				00184A201AC0041D00613FDE /* JTableView.swift */,
+				009A1DC01AC8FDF300F495DC /* WeatherDetail.swift */,
 			);
 			path = JTenki;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00184A211AC0041D00613FDE /* JTableView.swift in Sources */,
+				009A1DC11AC8FDF300F495DC /* WeatherDetail.swift in Sources */,
 				DDB6B1B81ABE5884004C2D71 /* ViewController.swift in Sources */,
 				DDB6B1B61ABE5884004C2D71 /* AppDelegate.swift in Sources */,
 			);
