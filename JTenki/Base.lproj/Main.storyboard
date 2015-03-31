@@ -1,111 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qdR-6X-aJA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fbb-pD-u9v">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JTenki" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri9-Vl-xZy">
-                                <rect key="frame" x="422" y="108" width="46" height="30"/>
-                                <state key="normal" title="J1チームの天気">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="48" y="51" width="46" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="147" y="132" width="107" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="114" y="48" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="joG-t9-UUN" kind="show" id="7Ix-Kn-8XY"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zvl-C3-7QE">
-                                <rect key="frame" x="0.0" y="188" width="600" height="412"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="188" width="800" height="412"/>
-                                </variation>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEy-Gp-8D7">
-                                <rect key="frame" x="114" y="86" width="176" height="73"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ri9-Vl-xZy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="16a-8p-fL9">
-                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
-                            </constraint>
-                            <constraint firstItem="Zvl-C3-7QE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="368" id="32E-Cg-oNf"/>
-                            <constraint firstItem="ri9-Vl-xZy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="D5f-iz-1Kg"/>
-                            <constraint firstAttribute="width" secondItem="Zvl-C3-7QE" secondAttribute="width" id="KFe-hg-7QI"/>
-                            <constraint firstItem="ri9-Vl-xZy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z9b-Hf-QDq">
-                                <variation key="heightClass=regular-widthClass=regular" constant="98"/>
-                            </constraint>
-                            <constraint firstItem="Zvl-C3-7QE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="cSl-DT-sIf"/>
-                            <constraint firstAttribute="centerX" secondItem="ri9-Vl-xZy" secondAttribute="centerX" constant="-0.5" id="sOb-aq-yt9"/>
-                            <constraint firstItem="Zvl-C3-7QE" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="t1D-Mn-GbS"/>
-                            <constraint firstItem="ri9-Vl-xZy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="xPW-Ol-b42"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="32E-Cg-oNf"/>
-                                <exclude reference="KFe-hg-7QI"/>
-                                <exclude reference="16a-8p-fL9"/>
-                                <exclude reference="D5f-iz-1Kg"/>
-                                <exclude reference="Z9b-Hf-QDq"/>
-                                <exclude reference="sOb-aq-yt9"/>
-                                <exclude reference="xPW-Ol-b42"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <exclude reference="Zvl-C3-7QE"/>
-                                <exclude reference="zEy-Gp-8D7"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="32E-Cg-oNf"/>
-                                <include reference="KFe-hg-7QI"/>
-                                <exclude reference="16a-8p-fL9"/>
-                                <exclude reference="D5f-iz-1Kg"/>
-                                <include reference="sOb-aq-yt9"/>
-                                <include reference="xPW-Ol-b42"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="16a-8p-fL9"/>
-                                <include reference="Z9b-Hf-QDq"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" id="L0K-bM-Smi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1618.5" y="-467.25"/>
-        </scene>
         <!--Table View-->
         <scene sceneID="W4e-8m-CLX">
             <objects>
@@ -134,7 +32,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95l-oQ-fXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2595" y="-449.25"/>
+            <point key="canvasLocation" x="2277" y="-409.5"/>
         </scene>
         <!--Weather Detail-->
         <scene sceneID="fgY-1d-NgL">
@@ -159,9 +57,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="95" y="398" width="210" height="68"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -178,11 +73,11 @@
                                 <exclude reference="ci6-RH-bnW"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="FB7-7d-BNZ"/>
-                                <exclude reference="Vkk-Tj-2tG"/>
                                 <exclude reference="9Dl-dk-jKe"/>
                                 <exclude reference="9ic-Z2-axc"/>
                                 <exclude reference="VfR-8Y-wAp"/>
+                                <exclude reference="FB7-7d-BNZ"/>
+                                <exclude reference="Vkk-Tj-2tG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -191,11 +86,11 @@
                                 <include reference="ci6-RH-bnW"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="FB7-7d-BNZ"/>
-                                <include reference="Vkk-Tj-2tG"/>
                                 <include reference="9Dl-dk-jKe"/>
                                 <exclude reference="9ic-Z2-axc"/>
                                 <include reference="VfR-8Y-wAp"/>
+                                <include reference="FB7-7d-BNZ"/>
+                                <include reference="Vkk-Tj-2tG"/>
                             </mask>
                         </variation>
                     </view>
@@ -207,25 +102,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5F-Ab-CbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3588" y="-408.75"/>
+            <point key="canvasLocation" x="4506" y="-408.75"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Qfq-f6-qpz">
+        <scene sceneID="Por-RT-XVR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qdR-6X-aJA" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fbb-pD-u9v" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zbV-0D-vov">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nX8-NI-KrS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wbs-J6-2gZ"/>
+                        <segue destination="joG-t9-UUN" kind="relationship" relationship="rootViewController" id="YNz-Jf-g5S"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5dg-rm-5mr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vgk-C5-0Dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="552" y="-409.5"/>
+            <point key="canvasLocation" x="1359" y="-409.5"/>
         </scene>
     </scenes>
 </document>

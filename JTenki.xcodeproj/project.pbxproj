@@ -38,7 +38,6 @@
 		009A1DD61AC94C2A00F495DC /* snow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009A1DD51AC94C2A00F495DC /* snow.jpg */; };
 		009A1DD81AC953C300F495DC /* cloud.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009A1DD71AC953C300F495DC /* cloud.jpg */; };
 		DDB6B1B61ABE5884004C2D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6B1B51ABE5884004C2D71 /* AppDelegate.swift */; };
-		DDB6B1B81ABE5884004C2D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6B1B71ABE5884004C2D71 /* ViewController.swift */; };
 		DDB6B1BB1ABE5884004C2D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB6B1B91ABE5884004C2D71 /* Main.storyboard */; };
 		DDB6B1BD1ABE5885004C2D71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB6B1BC1ABE5885004C2D71 /* Images.xcassets */; };
 		DDB6B1C01ABE5885004C2D71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB6B1BE1ABE5885004C2D71 /* LaunchScreen.xib */; };
@@ -89,7 +88,6 @@
 		DDB6B1B01ABE5884004C2D71 /* JTenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB6B1B41ABE5884004C2D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB6B1B51ABE5884004C2D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDB6B1B71ABE5884004C2D71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDB6B1BA1ABE5884004C2D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDB6B1BC1ABE5885004C2D71 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DDB6B1BF1ABE5885004C2D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 				00184A251AC00D5600613FDE /* icon */,
 				00184A221AC0069C00613FDE /* image */,
 				DDB6B1B51ABE5884004C2D71 /* AppDelegate.swift */,
-				DDB6B1B71ABE5884004C2D71 /* ViewController.swift */,
 				DDB6B1B91ABE5884004C2D71 /* Main.storyboard */,
 				DDB6B1BC1ABE5885004C2D71 /* Images.xcassets */,
 				DDB6B1BE1ABE5885004C2D71 /* LaunchScreen.xib */,
@@ -358,7 +355,6 @@
 			files = (
 				00184A211AC0041D00613FDE /* JTableView.swift in Sources */,
 				009A1DC11AC8FDF300F495DC /* WeatherDetail.swift in Sources */,
-				DDB6B1B81ABE5884004C2D71 /* ViewController.swift in Sources */,
 				DDB6B1B61ABE5884004C2D71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
