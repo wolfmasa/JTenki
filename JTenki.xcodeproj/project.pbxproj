@@ -37,6 +37,7 @@
 		009A1DD41AC9464400F495DC /* thunderstorm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009A1DCC1AC9464400F495DC /* thunderstorm.jpg */; };
 		009A1DD61AC94C2A00F495DC /* snow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009A1DD51AC94C2A00F495DC /* snow.jpg */; };
 		009A1DD81AC953C300F495DC /* cloud.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009A1DD71AC953C300F495DC /* cloud.jpg */; };
+		009F3F661ACCF1E8009AD3EB /* j.png in Resources */ = {isa = PBXBuildFile; fileRef = 009F3F651ACCF1E8009AD3EB /* j.png */; };
 		DDB6B1B61ABE5884004C2D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6B1B51ABE5884004C2D71 /* AppDelegate.swift */; };
 		DDB6B1BB1ABE5884004C2D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB6B1B91ABE5884004C2D71 /* Main.storyboard */; };
 		DDB6B1BD1ABE5885004C2D71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB6B1BC1ABE5885004C2D71 /* Images.xcassets */; };
@@ -85,6 +86,7 @@
 		009A1DCC1AC9464400F495DC /* thunderstorm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thunderstorm.jpg; sourceTree = "<group>"; };
 		009A1DD51AC94C2A00F495DC /* snow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snow.jpg; sourceTree = "<group>"; };
 		009A1DD71AC953C300F495DC /* cloud.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cloud.jpg; sourceTree = "<group>"; };
+		009F3F651ACCF1E8009AD3EB /* j.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j.png; sourceTree = "<group>"; };
 		DDB6B1B01ABE5884004C2D71 /* JTenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB6B1B41ABE5884004C2D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB6B1B51ABE5884004C2D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		00184A251AC00D5600613FDE /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				009F3F651ACCF1E8009AD3EB /* j.png */,
 				00184A261AC00D6300613FDE /* 50n.png */,
 				00184A271AC00D6300613FDE /* 13n.png */,
 				00184A281AC00D6300613FDE /* 11n.png */,
@@ -307,6 +310,7 @@
 			files = (
 				00184A431AC00D6300613FDE /* 11d.png in Resources */,
 				00184A3D1AC00D6300613FDE /* 04n.png in Resources */,
+				009F3F661ACCF1E8009AD3EB /* j.png in Resources */,
 				00184A401AC00D6300613FDE /* 01n.png in Resources */,
 				00184A391AC00D6300613FDE /* 13n.png in Resources */,
 				00184A421AC00D6300613FDE /* 13d.png in Resources */,

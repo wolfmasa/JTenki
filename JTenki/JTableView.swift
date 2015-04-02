@@ -143,9 +143,13 @@ class JTableView: UITableViewController {
 
             cell.imageView?.image = UIImage(named: teamArray[indexPath.row].imageName!)
         }
-        else if teamArray[indexPath.row].status == 0 {
-            requestToUrl(teamArray[indexPath.row].location)
-            teamArray[indexPath.row].status = 1
+        else {
+
+            if teamArray[indexPath.row].status == 0 {
+                requestToUrl(teamArray[indexPath.row].location)
+                teamArray[indexPath.row].status = 1
+            }
+            cell.imageView?.image = UIImage(named: "j.png")
         }
 
         return cell
